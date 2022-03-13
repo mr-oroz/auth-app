@@ -1,38 +1,91 @@
-.App {
+.header {
+  background-color: rgb(0, 30, 60);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1367px;
+  margin: 0 auto;
+}
+.header h1 {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-list a {
+  margin: 0 20px;
+  font-size: 18px;
+}
+.header-list a:hover {
+  border-bottom: 2px solid #fff;
+}
+.header button {
+  cursor: pointer;
+  padding: 8px 20px;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #222222;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 5px #272f64, 0px -1px 5px #272f64;
+}
+.header button:hover {
+  box-shadow: 0px 3px 10px #272f64, 0px -3px 10px #272f64;
+}
+.login, .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login h1, .register h1 {
   text-align: center;
+  margin: 0
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  display: flex;  
+  flex-direction: column;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 1px 8px #fff, 0 -1px 8px #fff;
+  border-radius: 10px;
+  background-color: #E8EAF5;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+label {
+  text-transform: uppercase;
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 10px 10px;
+  border: none;
+  margin-top: 8px;
+  outline-color: skyblue;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+input::placeholder {
+  font-size: 16px;
+}
+.form-group button {
+  border: none;
+  padding: 15px;
+  background-color: #0D3DF0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
 }
